@@ -8,7 +8,7 @@ const CustomField = ({ label, value, type = "text", handleChange }) => {
         type={type}
         value={value}
         name={label}
-        // id={label}
+        id={label}
         onChange={handleChange}
       />
     </div>
@@ -23,6 +23,9 @@ CustomField.propTypes = {
 };
 export default CustomField;
 
-/* formik needs either an id or name attribute matching the values 
-      supplied in the initial values object
-      */
+/* 
+formik needs either an id or name attribute matching the values 
+     
+supplied in the initial values object
+
+*/

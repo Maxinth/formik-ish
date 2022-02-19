@@ -9,12 +9,15 @@ function App() {
       email: "",
       channel: "",
     },
+    onSubmit: (values) => {
+      console.log("Form data", values);
+    },
   });
 
-  console.log("Form values : ", formik.values);
+  // console.log("Form values : ", formik.values);
   return (
     <div className="App">
-      <form>
+      <form onSubmit={formik.handleSubmit}>
         <CustomField
           label="name"
           value={formik.values.name}
