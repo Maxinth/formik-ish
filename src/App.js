@@ -33,7 +33,7 @@ function App() {
           value={formik.values.channel}
           handleChange={formik.handleChange}
         />
-        <button type="button">Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
