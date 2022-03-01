@@ -1,6 +1,7 @@
 import "./App.css";
 import CustomField from "./components/CustomField";
 import { useFormik } from "formik";
+import { Button } from "antd";
 
 function App() {
   const formik = useFormik({
@@ -33,7 +34,7 @@ function App() {
           value={formik.values.channel}
           handleChange={formik.handleChange}
         />
-        <button type="submit">Submit</button>
+        <Button type="primary">Submit</Button>
       </form>
     </div>
   );
