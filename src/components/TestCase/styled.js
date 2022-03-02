@@ -1,4 +1,4 @@
-import { Button as AntButton, Layout } from "antd";
+import { Button as AntButton, Layout as AntLayout } from "antd";
 import styled from "styled-components";
 
 const {
@@ -6,7 +6,7 @@ const {
   Footer: AntFooter,
   Sider: AntSider,
   Content: AntContent,
-} = Layout;
+} = AntLayout;
 
 const Button = styled(AntButton)`
   background-color: pink !important;
@@ -40,10 +40,26 @@ const Footer = styled(AntFooter)`
 const Sider = styled(AntSider)`
   background-color: green !important;
   color: #fff;
+  display: flex;
+  /* min-height: 80vh; */
+
+  & > div.ant-layout-sider-children {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 const Content = styled(AntContent)`
   background-color: brown !important;
   color: #fff;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
-export { Button, Container, Header, Footer, Sider, Content };
+
+const Layout = styled(AntLayout)`
+  padding: 2rem;
+`;
+export { Button, Container, Header, Footer, Sider, Content, Layout };
