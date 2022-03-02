@@ -6,7 +6,7 @@ const TestCase = () => {
       <Button type="primary" disabled>
         btn
       </Button>
-      <StyledButton danger disabled>
+      <StyledButton loading disabled>
         btn
       </StyledButton>
     </Container>

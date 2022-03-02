@@ -2,8 +2,9 @@ import { Button as AntButton } from "antd";
 import styled from "styled-components";
 
 const Button = styled(AntButton)`
-  /* background-color: pink !important; */
-  cursor: pointer;
+  background-color: pink !important;
+  color: green !important;
+  cursor: pointer !important;
 `;
 
 const Container = styled.section`
