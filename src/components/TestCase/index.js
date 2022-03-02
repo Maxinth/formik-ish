@@ -1,12 +1,15 @@
 import { Button } from "antd";
-
+import { Button as StyledButton, Container } from "./styled";
 const TestCase = () => {
   return (
-    <div>
+    <Container>
       <Button type="primary" disabled>
         btn
       </Button>
-    </div>
+      <StyledButton danger disabled>
+        btn
+      </StyledButton>
+    </Container>
   );
 };
 
