@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot of <Button /> 1`] = `
+<button
+  className="ant-btn ant-btn-default sc-bdvvtL ezlRpd"
+  onClick={[Function]}
+  type="button"
+/>
+`;
