@@ -1,15 +1,16 @@
-import { Button } from "antd";
-import { Button as StyledButton, Container } from "./styled";
+import { Container } from "./styled";
+import { Typography } from "antd";
 
+const { Title } = Typography;
 const TestCase = () => {
   return (
     <Container>
-      <Button type="primary" disabled>
-        btn
-      </Button>
-      <StyledButton loading disabled>
-        btn
-      </StyledButton>
+      <Title>h1. Ant Design</Title>
+      <Title level={2}>h2. Ant Design</Title>
+      <Title level={3}>h3. Ant Design</Title>
+      <Title level={4}>h4. Ant Design</Title>
+      <Title level={5}>h5. Ant Design</Title>
+      <Typography.Title level={3}>h2 . Ant design</Typography.Title>
     </Container>
   );
 };
