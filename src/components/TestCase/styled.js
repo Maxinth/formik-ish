@@ -37,7 +37,7 @@ const Footer = styled(AntFooter)`
   background-color: black;
   color: #fff;
 `;
-const Sider = styled(AntSidbacer)`
+const Sider = styled(AntSider)`
   background-color: green !important;
   color: #fff;
   display: flex;
